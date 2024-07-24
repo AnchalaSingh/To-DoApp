@@ -1,0 +1,24 @@
+#pending-tasks-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#pending-tasks-container > *:first-child {
+    width: 80vw;
+    max-width: 1200px; /* Limit maximum width for better readability */
+    margin: 0 auto; /* Center align within the container */
+    padding: 20px; /* Add padding for better spacing */
+    background: linear-gradient(45deg, yellow, green, violet,);
+    border-radius: 0px; /* Rounded corners for a polished look */
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.1); /* Subtle shadow for depth */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    #pending-tasks-container > *:first-child {
+        width: 90vw; /* Adjust width for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

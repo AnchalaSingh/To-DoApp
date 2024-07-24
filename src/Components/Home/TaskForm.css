@@ -1,0 +1,50 @@
+/* Container for the task form */
+#taskform-container {
+    width: 40vw;
+    max-width: 600px; /* Limit maximum width for better readability */
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 30vh; /* Ensure a minimum height */
+    background-color: bisque;
+    padding: 20px; /* Increased padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px; /* Rounded corners for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* Required for pseudo-elements */
+    z-index: 1; /* Ensure it's above the pseudo-element */
+}
+
+#taskform-container:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    background: linear-gradient(45deg, yellow, green, rgb(7, 7, 209), indigo, violet);
+    border-radius: 15px; /* Ensure the border radius matches the container */
+    z-index: -1; /* Place behind the container */
+}
+
+/* Parent container for centering the task form */
+#taskform-container-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically as well */
+    padding: 40px 20px; /* Added horizontal padding for better responsiveness */
+    background-color: #f5f5f5; /* Light background color for contrast */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    #taskform-container {
+        width: 80vw; /* Adjust width for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    #taskform-container-parent {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+}

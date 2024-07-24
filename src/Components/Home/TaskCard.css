@@ -1,0 +1,12 @@
+/* #task-card-container{
+    width: 20300px;
+
+} */
+
+.pending {
+    background-color: blue;
+}
+
+.completed {
+    background-color: greenyellow;
+}
